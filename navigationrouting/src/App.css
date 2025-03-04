@@ -1,0 +1,170 @@
+/* Global Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+/* Hover effect for logo */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Logo spin animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation on logo only when prefers-reduced-motion is not enabled */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* General Card Styles */
+.card {
+  padding: 2em;
+}
+
+/* Link styles for 'read the docs' */
+.read-the-docs {
+  color: #888;
+}
+
+/* Centering div */
+
+
+/* User Profile Styles */
+.user-profile {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header Section */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Profile image container */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+/* Profile image styling */
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Profile Info */
+.profile-info h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.profile-info p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.profile-info p strong {
+  font-weight: bold;
+}
+
+/* Profile Description Section */
+.profile-description h3 {
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-description p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Container chung cho danh sách */
+ul {
+  list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
+  padding: 0;
+  margin: 0;
+  display: grid; /* Sử dụng grid layout để căn đều các item */
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto; /* Căn giữa */
+}
+
+/* Các item trong danh sách */
+li {
+  padding: 15px;
+  background-color: #fff; /* Màu nền trắng */
+  border-radius: 8px; /* Bo tròn các góc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng mờ cho mỗi item */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng cho hover */
+}
+
+/* Hiệu ứng khi hover vào mỗi item */
+li:hover {
+  transform: translateY(-5px); /* Dịch chuyển nhẹ lên khi hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng bóng khi hover */
+}
+
+/* Các link trong danh sách */
+a {
+  text-decoration: none; /* Loại bỏ gạch chân mặc định */
+  color: #333; /* Màu chữ tối */
+  font-size: 1.2em;
+  font-weight: 500; /* Đậm chữ để nổi bật */
+  display: block; /* Chắc chắn link chiếm toàn bộ không gian của item */
+  transition: color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+/* Hiệu ứng khi hover vào link */
+a:hover {
+  color: #646cff; /* Đổi màu khi hover */
+}
+
+/* Các hiệu ứng khi click vào danh sách */
+a:active {
+  color: #ff6f61; /* Đổi màu khi click vào */
+}
